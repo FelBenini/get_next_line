@@ -12,7 +12,7 @@
 
 #include "get_next_line_bonus.h"
 
-char	*join_and_free(char *s1, char *s2)
+static char	*join_and_free(char *s1, char *s2)
 {
 	char	*res;
 
@@ -21,7 +21,7 @@ char	*join_and_free(char *s1, char *s2)
 	return (res);
 }
 
-char	*get_current_line(char *str)
+static char	*get_current_line(char *str)
 {
 	int		len;
 	int		i;
@@ -75,7 +75,7 @@ static char	*get_remainder(char *src)
 	return (res);
 }
 
-char	*read_file(int fd, char *res)
+static char	*read_file(int fd, char *res)
 {
 	char	*buffer;
 	int		bytes_read;
